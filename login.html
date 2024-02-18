@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | mymusic</title>
+    <!-- Link CSS thư viện Grid System -->
+    <link rel="stylesheet" href="assets/css/library_grid_system.css">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="assets/css/login.css">
+    <!-- Link Google Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Favicon -->
+    <link type="image/png" sizes="32x32" rel="icon" href="assets/img/logo/FaviconWhite.png">
+    <!-- Link Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="grid wide wrapper">
+        <div class="row container">
+            <div class="col l-12 m-12 c-12 logo">
+                <img src="assets/img/logo/logoWhiteTransparent.png" alt="Logo">
+            </div>
+            <div class="col l-4 l-o-4 m-8 m-o-2 c-12 login">
+                <div class="col l-12 m-12 c-12">
+                    <h1>Đăng nhập</h1>
+                </div>
+                <div class="col l-12 m-12 c-12">
+                    <form action="index.html">
+                        <input type="text" name="taikhoan" placeholder="Tài khoản"> <br>
+                        <input type="password" name="matkhau" placeholder="Mật khẩu"> <br>
+                        <input class="tieptuc" type="submit" name="submit" value="Tiếp tục">
+                    </form>
+                </div>
+                <div class="col l-12 m-12 c-12">
+                    <h5>Chưa có mymusic ? <a href="#">Bắt đầu</a></h5>
+                </div>
+                <div class="col l-8 l-o-2 m-6 m-o-3 c-6 c-o-3" style="height: 25%;">
+                    <div class="otherWayLogin">
+                        <h4>hoặc</h4>
+                        <button class="loginWithGoogle"><img src="https://accounts.scdn.co/sso/images/new-google-icon.72fd940a229bc94cf9484a3320b3dccb.svg" alt=""></button>
+                        <button class="loginWithFacebook"><img src="https://accounts.scdn.co/sso/images/new-facebook-icon.eae8e1b6256f7ccf01cf81913254e70b.svg" alt=""></button>
+                        <button class="loginWithApple"><img src="https://therewardboss.com/wp-content/uploads/2016/11/apple-logo-300x300.png" alt="" style="width: 40px; padding-bottom: 3px;"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

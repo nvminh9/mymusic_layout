@@ -1,0 +1,511 @@
+/* CSS tổng thể */
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+html{
+    height: 100%;
+    scroll-behavior: smooth;    
+}
+body{
+    height: 100%;
+    width: auto;
+    margin: 0;
+    padding: 8px;
+    background-color: grey;
+}
+/* CSS wrapper */
+.wrapper{
+    height: 100%;
+    border-radius: 10px;
+}
+/* CSS container */
+.container{
+    height: 100%;
+    margin: 0 auto;
+}
+/* CSS leftContainer */
+.leftContainer{
+    height: 100%;
+    background-color: whitesmoke;
+    border-radius: 10px 0px 0px 10px;
+    border: .5px solid black;
+}
+    /* logoZone trong leftContainer */
+    .logoZone{
+        border-radius: 10px 0px 0px 0px;
+        height: 20%;
+    }
+        /* logoContainer trong logoZone */
+        .logoContainer{
+            background-color: whitesmoke;
+            border-radius: 10px 0px 0px 0px;
+            border-bottom: .5px solid black;
+            height: max-content;
+            padding: 10px;
+        }
+        .logoContainer a{
+            text-decoration: none;
+        }
+            /* logo */
+            .logo{
+                margin-bottom: -5px;
+                width: 50%;
+            }
+        /* searchButton trong logoZone */
+        .searchButton{
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            float: right;
+            color: rgb(37, 37, 37);
+            padding-top: 5px;
+            transition: 0.30s;
+            -webkit-transition: 0.30s;
+            -moz-transition: 0.30s;
+            -ms-transition: 0.30s;
+            -o-transition: 0.30s;
+        }
+        .searchButton:hover{
+            background-color: black;
+            border-radius: 10px;
+            color: white;
+            transition: 0.30s;
+            -webkit-transition: 0.30s;
+            -moz-transition: 0.30s;
+            -ms-transition: 0.30s;
+            -o-transition: 0.30s;
+        }
+        /* profileContainer trong logoZone */
+        .profileContainer{
+            height: 60%;
+            border-radius: none;
+            border-bottom: .5px solid black;
+            z-index: 1;
+        }
+        .profile{
+            height: 100%;
+            /* width: 100%; */
+        }
+        .profileContainer .avatarProfile{
+            width: 100%;
+            height: 100%;
+        }
+        .profileContainer .avatarProfile a{
+            line-height: 0;		
+            display: inline-block;	
+            margin: 5px;
+            border-radius: 50%;	
+            transition: linear 0.25s;
+            text-align: center;
+        }
+        .profileContainer img{
+            vertical-align: middle;
+            width: 75%;
+            height: 75%;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+            cursor: pointer;
+            border-radius: 50%;
+            border: .5px solid black;
+        }
+        .profileContainer .nameProfile{
+            width: 100%;
+            height: 100%;
+            text-align: left;
+            vertical-align: middle;
+            padding: 30px 0px 30px 0px;
+        }
+        .profileContainer .nameProfile .name{
+            font-family: 'Ubuntu', sans-serif;
+            text-decoration: none;
+            color: black;
+        }
+        .profileContainer .nameProfile .name:hover{
+            text-decoration: underline;
+        }
+        
+    /* dspZone trong leftContainer */
+    .dspZone{
+        height: 80%;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+        /* dspHeader */
+        .dspHeader{
+            border-bottom: 0.5px solid black;
+            text-align: left;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: 600;
+            height: 9%;
+        }
+        .dspHeader .addDsp{
+            float: right;
+            border-radius: 50%;
+            border: none;
+            padding-bottom: 3px;
+            cursor: pointer;
+            transition: 0.70s;
+            -webkit-transition: 0.70s;
+            -moz-transition: 0.70s;
+            -ms-transition: 0.70s;
+            -o-transition: 0.70s;
+            border: .5px solid transparent;
+        }
+        .dspHeader .addDsp:hover{
+            border: .5px solid black;
+            transition: 0.70s;
+            -webkit-transition: 0.70s;
+            -moz-transition: 0.70s;
+            -ms-transition: 0.70s;
+            -o-transition: 0.70s;
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+        /* dsp */
+        .dsp{
+            height: 14%;
+            /* background-color: black; */
+            /* background-color: #3d3d3d; */
+            background-color: #131313;
+            border-radius: 10px;
+            padding: 0px;
+            margin-bottom: 8px;
+            cursor: pointer;
+        }
+        .dsp:hover{
+            background-color: #1d1d1d;
+        }
+        .dsp:hover .dspName span{
+            text-decoration: underline;
+        }
+        .dspContainer{
+            height: 91%;
+            /* padding: 8px; */
+            padding: 20px;
+        }
+        .dspInfo{
+            height: 100%;
+        }
+        .dspInfo .dspImg{
+            height: 100%;
+        }
+        .dspInfo .dspImg img{
+            height: 100%;
+            width: 50%;
+            border-radius: 10px 0px 0px 10px;
+            box-shadow: rgb(95 96 96 / 40%) 6px 2px 16px 0px, rgb(255 255 255 / 0%) -6px -2px 16px 0px;
+        }
+        .dspInfo .dspName{
+            padding-top: 25px;
+            padding-left: 0px;
+            text-align: left;
+            height: 100%;
+        }
+        .dspInfo .dspName span{
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+        }
+/* CSS middleContainer */
+.middleContainer{
+    height: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(85,85,85,1) 100%);
+    border: .5px solid black;
+    border-left: none;
+    border-right: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* background-color: rgb(48, 48, 48); */
+}
+    /* slideShow */
+    .slideShow{
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+        border-bottom: .5px solid black;
+    }
+    .listImages{
+        height: 100%;
+        padding: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        transform: translateX();
+        transition: 0.60s;
+            -webkit-transition: 0.60s;
+            -moz-transition: 0.60s;
+            -ms-transition: 0.60s;
+            -o-transition: 0.60s;
+    }
+    .imgContainer{
+
+    }
+    .listImages img{
+        width: 100%;
+        height: 100%;
+    }
+    /* button in slideShow */
+    .btn{
+        height: 100%;
+        font-size: 20px;
+        color: whitesmoke;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        padding-top: 18%;
+        transition: 0.60s;
+            -webkit-transition: 0.60s;
+            -moz-transition: 0.60s;
+            -ms-transition: 0.60s;
+            -o-transition: 0.60s;
+    }
+    .btnLeft{
+        left: 0;
+    }
+    .btnLeft:hover{
+        background: linear-gradient(-270deg,rgba(148, 148, 148, 0.268) 0%,  rgba(0, 0, 0, 0) 100%);
+        transition: 0.60s;
+            -webkit-transition: 0.60s;
+            -moz-transition: 0.60s;
+            -ms-transition: 0.60s;
+            -o-transition: 0.60s;
+    }
+    .btnRight{
+        right: 0;
+    }
+    .btnRight:hover{
+        background: linear-gradient(270deg,rgba(148, 148, 148, 0.268) 0%,  rgba(0, 0, 0, 0) 100%);
+        transition: 0.60s;
+            -webkit-transition: 0.60s;
+            -moz-transition: 0.60s;
+            -ms-transition: 0.60s;
+            -o-transition: 0.60s;
+    }
+    /* slideGenre */
+    .slideGenre{
+        height: 230px;
+        margin-top: 30px;
+    }
+    .titleGenre{
+        padding-right: 16px;
+    }
+    .titleGenre span{
+        color: whitesmoke;
+        /* font-size: 22px; */
+        font-size: 26px;
+        font-weight: 600;
+        padding-left: 10px;
+    }
+    .listGenre{
+        display: flex;
+        height: 100%;
+        /* padding: 8px; */
+        padding: 15px;
+        padding-top: 16px;
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+    .listGenre::-webkit-scrollbar {
+        width: 10px;
+      }
+      
+      /* Track */
+      .listGenre::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      
+      /* Handle */
+      .listGenre::-webkit-scrollbar-thumb {
+        background: rgba(64, 64, 64, 0.427);
+        border-radius: 2px;
+        
+      }
+      
+      /* Handle on hover */
+      .listGenre::-webkit-scrollbar-thumb:hover {
+        background: #5c5c5c6d;
+      }
+    .genre{
+        height: 100%;
+    }
+    .genre .genreContainer{
+        height: 100%;
+        padding: 16px;
+        background-color: #131313;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        border-radius: 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .genre .genreContainer:hover{
+        background-color: #1d1d1d;
+    }
+    .genre .genreContainer:hover span{
+        text-decoration: underline;
+    }
+    .genre img{
+        /* height: 100%; */
+        width: 100%;
+        height: 75%;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        background: whitesmoke;
+    }
+    .genre .genreContainer span{
+        color: whitesmoke;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    /* slideArtist */
+    .slideArtist{
+        height: 230px;
+        margin-top: 50px;
+    }
+    .titleArtist{
+        padding-right: 16px;
+    }
+    .titleArtist span{
+        color: whitesmoke;
+        /* font-size: 22px; */
+        font-size: 26px;
+        font-weight: 600;
+        padding-left: 10px;
+    }
+    .listArtist{
+        display: flex;
+        height: 100%;
+        /* padding: 8px; */
+        padding: 15px;
+        padding-top: 16px;
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+    .listArtist::-webkit-scrollbar {
+        width: 10px;
+      }
+      
+      /* Track */
+      .listArtist::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      
+      /* Handle */
+      .listArtist::-webkit-scrollbar-thumb {
+        background: rgba(64, 64, 64, 0.427);
+        border-radius: 2px;
+        
+      }
+      
+      /* Handle on hover */
+      .listArtist::-webkit-scrollbar-thumb:hover {
+        background: #5c5c5c6d;
+      }
+    .artist{
+        height: 100%;
+    }
+    .artist .artistContainer{
+        height: 100%;
+        padding: 16px;
+        background-color: #131313;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        border-radius: 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .artist .artistContainer:hover{
+        background-color: #1d1d1d;
+    }
+    .artist .artistContainer:hover span{
+        text-decoration: underline;
+    }
+    .artist img{
+        /* height: 100%; */
+        width: 100%;
+        /* height: 75%; */
+        height: 80%;
+        margin-bottom: 10px;
+        border-radius: 50%;
+        background: whitesmoke;
+    }
+    .artist .artistContainer span{
+        color: whitesmoke;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+
+/* CSS rightContainer */
+.rightContainer{
+    height: 100%;
+    /* background-color: whitesmoke; */
+    background: linear-gradient(136deg, rgba(237, 237, 237, 0.895) 0%,  rgba(255, 255, 255, 0.889) 100%);
+    border-radius: 0px 10px 10px 0px;
+    border: .5px solid black;
+}
+    /* songPlayedContainer */
+    .songPlayedContainer{
+        height: 100%;
+    }
+    /* songPlayedImg */
+    .songPlayedImg{
+        height: 45%;
+        /* padding: 15px; */
+        padding: 9px;
+    }
+    .songPlayedImg img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        /* border: .5px solid black; */
+    }
+    /* songPlayedLyrics */
+    .songPlayedLyrics{
+        height: 45%;
+    }
+    
+    /* songPlayedControl */
+    .songPlayedControl{
+        height: 10%;
+        /* padding: 0px 15px 0px 15px; */
+        padding: 9px;
+    }
+    .songPlayedControl audio{
+        width: 100%;
+        background: #f1f3f4;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        border-radius: 10px;
+        border: 0.5px solid black;
+    }
+
+
+
+
+
+
+/* CSS phần Scrollbar tổng quát */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #8888886d;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #5c5c5c6d;
+  }
