@@ -14,11 +14,11 @@
         for(let i=0;i<data["songs"].length; i++){
             listSong[i] = data["songs"][i]
         }
-        // document.getElementById('audioSong').innerHTML = `<audio src="${listSong[0]["audio"]}" controls></audio>`;
-        document.getElementById('audioSong').innerHTML = `<audio src="../assets/music/uThiAnhDaOnHon.mp3" controls></audio>`;
-        // document.getElementById('songPlayedImg').innerHTML = `<img src="${listSong[0]["albumart"]}" alt="Ảnh Nhạc">`;
-        document.getElementById('songPlayedImg').innerHTML = `<img src="https://i.scdn.co/image/ab67616d0000b273b315e8bb7ef5e57e9a25bb0f" alt="Ảnh Nhạc">`;
-        root.setAttribute('style', '--pseudo-background: url( https://i.scdn.co/image/ab67616d0000b273b315e8bb7ef5e57e9a25bb0f)');
+        document.getElementById('audioSong').innerHTML = `<audio src="${listSong[0]["audio"]}" controls></audio>`;
+        // document.getElementById('audioSong').innerHTML = `<audio src="../assets/music/uThiAnhDaOnHon.mp3" controls></audio>`;
+        document.getElementById('songPlayedImg').innerHTML = `<img src="${listSong[0]["albumart"]}" alt="Ảnh Nhạc">`;
+        // document.getElementById('songPlayedImg').innerHTML = `<img src="https://i.scdn.co/image/ab67616d0000b273b315e8bb7ef5e57e9a25bb0f" alt="Ảnh Nhạc">`;
+        root.setAttribute('style', `--pseudo-background: url( ${listSong[0]["albumart"]})`);
       })
     }
   )
