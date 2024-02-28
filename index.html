@@ -16,18 +16,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
-    <title>Home | mymusic</title>
+    <title>mymusic | Express yourself through your music taste</title>
 </head>
 <body>
     <div class="grid wide wrapper">
         <div class="row container">
 
             <!-- Phần Container bên trái (chứa logo, ds phát,...) -->
-            <div class="col l-3 m-12 c-12 leftContainer">
+            <div id="leftContainer" class="col l-3 m-12 c-12 leftContainer">
                 <div class="row logoZone">
                     <div class="col l-12 m-12 c-12 logoContainer">
                         <a href="#">
-                            <img class="logo" src="assets/img/logo/logoNoBackground.png" alt="">
+                            <img class="logo" src="assets/img/logo/logoWhiteTransparent.png" alt="">
                         </a>
                         <button class="searchButton">
                             <span class="material-symbols-outlined">
@@ -39,7 +39,7 @@
                         <div class="row profile">
                             <div class="col l-4 m-12 c-12 avatarProfile">
                                 <a href="#">
-                                    <img src="https://as2.ftcdn.net/v2/jpg/03/31/69/91/1000_F_331699188_lRpvqxO5QRtwOM05gR50ImaaJgBx68vi.jpg" alt="">
+                                    <img src="https://ew.com/thmb/pKJRS5tQCFTptZBFXTac64EeE7E=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Playboi-Carti-021423-db8c81a42c88419b8cd58e2c8ead244d.jpg" style="background-color: grey;">
                                 </a>
                             </div>
                             <div class="col l-8 m-12 c-12 nameProfile">
@@ -225,9 +225,15 @@
             </div>
 
             <!-- Phần Container ở giữa (chứa các nội dung show ra) -->
-            <div class="col l-6 m-0 c-0 middleContainer">
+            <div id="middleContainer" class="col l-6 m-0 c-0 middleContainer">
+                <!-- Button Show Song Player -->
+                <div id="buttonShowSongPlayerContainer" class="col l-12 m-12 c-12 buttonShowSongPlayerContainer">
+                    <button class="buttonShowSongPlayer" onclick="ShowSongPlayer()"><span class="material-symbols-outlined">
+                        arrow_left
+                    </span></button>
+                </div>
                 <!-- slide images -->
-                <div class="row slideShow">
+                <div id="slideShow" class="row slideShow">
                     <div class="col l-12 m-12 c-12 listImages">
                         <img class="imgInSlide" src="https://i.ytimg.com/vi/5WkwBKu1le0/maxresdefault.jpg" alt="99% Album Cover">
                         <img class="imgInSlide" src="https://i.ytimg.com/vi/82ZTNQNEQgE/maxresdefault.jpg" alt="Ái Album Cover">
@@ -236,13 +242,13 @@
                         <img class="imgInSlide" src="https://i.redd.it/8kdidpdcobl71.jpg" alt="Playboi Carti Cover">
                     </div>
                     <div class="col l-12 m-12 c-12 btns">
-                        <div class="btnLeft btn"><span class="material-symbols-outlined">arrow_left</span></div>
-                        <div class="btnRight btn"><span class="material-symbols-outlined">arrow_right</span></div>
+                        <div id="btnLeftSlideShow" class="btnLeft btn"><span class="material-symbols-outlined">arrow_left</span></div>
+                        <div id="btnRightSlideShow" class="btnRight btn"><span class="material-symbols-outlined">arrow_right</span></div>
                     </div>
                 </div>
 
                 <!-- Phần danh sách thể loại -->
-                <div class="row slideGenre">
+                <div id="slideGenre" class="row slide slideGenre">
                     <div class="col l-12 m-12 c-12 titleGenre">
                         <span class="title">Thể Loại</span>
                     </div>
@@ -299,7 +305,7 @@
                 </div>
 
                 <!-- Phần danh sách nghệ sĩ -->
-                <div class="row slideArtist">
+                <div id="slideArtist" class="row slide slideArtist">
                     <div class="col l-12 m-12 c-12 titleArtist">
                         <span class="title">Nghệ sĩ</span>
                     </div>
@@ -388,8 +394,14 @@
             </div>
 
             <!-- Phần Container bên phải (chứa miêu tả nhạc) -->
-            <div class="col l-3 m-0 c-0 rightContainer">
+            <div id="rightContainer" class="col l-3 m-0 c-0 rightContainer">
                 <div class="row songPlayedContainer">
+                    <div class="col l-12 m-12 c-12 buttonHideSongPlayerContainer">
+                        Song Player
+                        <button class="buttonHideSongPlayer" onclick="HideSongPlayer()"><span class="material-symbols-outlined">
+                            arrow_right
+                        </span></button>
+                    </div>
                     <div id="songPlayedImg" class="col l-12 m-12 c-12 songPlayedImg">
                         <img src="" alt="Ảnh Nhạc Trap Căng Nhất 2023">
                     </div>
@@ -407,6 +419,7 @@
         </div>
     </div>
 
+    <script src="assets/js/home.js"></script>
     <script src="assets/js/slideShow.js"></script>
     <script src="assets/js/songPlayer.js"></script>
 </body>

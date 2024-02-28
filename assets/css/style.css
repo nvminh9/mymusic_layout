@@ -1,6 +1,9 @@
+/* Màu chữ : #ededed (màu trắng ngà) */
+
 /* CSS tổng thể */
 *{
     font-family: 'Ubuntu', sans-serif;
+    color: #ededed;
 }
 html{
     height: 100%;
@@ -11,7 +14,8 @@ body{
     width: auto;
     margin: 0;
     padding: 8px;
-    background-color: grey;
+    /* background-color: grey; */
+    background: #4d4d4d;
 }
 /* CSS wrapper */
 .wrapper{
@@ -26,9 +30,10 @@ body{
 /* CSS leftContainer */
 .leftContainer{
     height: 100%;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
+    background: #252526;
     border-radius: 10px 0px 0px 10px;
-    border: .5px solid black;
+    border-right: .5px solid #3b3b3c;
 }
     /* logoZone trong leftContainer */
     .logoZone{
@@ -37,9 +42,10 @@ body{
     }
         /* logoContainer trong logoZone */
         .logoContainer{
-            background-color: whitesmoke;
+            /* background-color: whitesmoke; */
+            background: #252526;
             border-radius: 10px 0px 0px 0px;
-            border-bottom: .5px solid black;
+            border-bottom: .5px solid #3b3b3c;
             height: max-content;
             padding: 10px;
         }
@@ -79,7 +85,7 @@ body{
         .profileContainer{
             height: 60%;
             border-radius: none;
-            border-bottom: .5px solid black;
+            border-bottom: .5px solid #3b3b3c;
             z-index: 1;
         }
         .profile{
@@ -89,23 +95,28 @@ body{
         .profileContainer .avatarProfile{
             width: 100%;
             height: 100%;
+            padding: 0;
         }
         .profileContainer .avatarProfile a{
+            height: 100%;
+            width: 100%;
             line-height: 0;		
             display: inline-block;	
-            margin: 5px;
             border-radius: 50%;	
             transition: linear 0.25s;
             text-align: center;
+            padding: 8px;
         }
         .profileContainer img{
             vertical-align: middle;
-            width: 75%;
-            height: 75%;
+            width: 100%;
+            height: 100%;
             box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
             cursor: pointer;
-            border-radius: 50%;
-            border: .5px solid black;
+            border-radius: 8px;
+            border: .5px solid #3b3b3c;
+            object-fit: cover;
+            object-position: top;
         }
         .profileContainer .nameProfile{
             width: 100%;
@@ -117,7 +128,7 @@ body{
         .profileContainer .nameProfile .name{
             font-family: 'Ubuntu', sans-serif;
             text-decoration: none;
-            color: black;
+            color: #a7a7a7;
         }
         .profileContainer .nameProfile .name:hover{
             text-decoration: underline;
@@ -131,7 +142,7 @@ body{
     }
         /* dspHeader */
         .dspHeader{
-            border-bottom: 0.5px solid black;
+            border-bottom: 0.5px solid #3b3b3c;
             text-align: left;
             padding: 15px;
             font-size: 18px;
@@ -139,6 +150,7 @@ body{
             height: 9%;
         }
         .dspHeader .addDsp{
+            color: #131313;
             float: right;
             border-radius: 50%;
             border: none;
@@ -152,7 +164,7 @@ body{
             border: .5px solid transparent;
         }
         .dspHeader .addDsp:hover{
-            border: .5px solid black;
+            border: .5px solid #3b3b3c;
             transition: 0.70s;
             -webkit-transition: 0.70s;
             -moz-transition: 0.70s;
@@ -196,7 +208,7 @@ body{
             height: 100%;
             width: 50%;
             border-radius: 10px 0px 0px 10px;
-            box-shadow: rgb(95 96 96 / 40%) 6px 2px 16px 0px, rgb(255 255 255 / 0%) -6px -2px 16px 0px;
+            /* box-shadow: rgb(95 96 96 / 40%) 6px 2px 16px 0px, rgb(255 255 255 / 0%) -6px -2px 16px 0px; */
         }
         .dspInfo .dspName{
             padding-top: 25px;
@@ -212,21 +224,25 @@ body{
 /* CSS middleContainer */
 .middleContainer{
     height: 100%;
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(85,85,85,1) 100%);
-    border: .5px solid black;
+    /* background: rgb(0,0,0); */
+    /* background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(85,85,85,1) 100%); */
+    background: #1f1f1f;
+    border-right: .5px solid #3b3b3c;
     border-left: none;
     border-right: none;
     overflow-x: hidden;
     overflow-y: auto;
     /* background-color: rgb(48, 48, 48); */
+    transition: all .6s;
 }
     /* slideShow */
     .slideShow{
+        /* height: 350px; */
         height: 300px;
         overflow: hidden;
         position: relative;
-        border-bottom: .5px solid black;
+        /* border-bottom: .5px solid #3b3b3c; */
+        transition: all .2s;
     }
     .listImages{
         height: 100%;
@@ -249,6 +265,9 @@ body{
         height: 100%;
     }
     /* button in slideShow */
+    #btnLeftSlideShow, #btnRightSlideShow{
+        transition: all .2s;
+    }
     .btn{
         height: 100%;
         font-size: 20px;
@@ -258,6 +277,7 @@ body{
         transform: translateY(-50%);
         cursor: pointer;
         padding-top: 18%;
+        /* padding-top: 14%; */
         transition: 0.60s;
             -webkit-transition: 0.60s;
             -moz-transition: 0.60s;
@@ -286,9 +306,17 @@ body{
             -ms-transition: 0.60s;
             -o-transition: 0.60s;
     }
+
+    /* CSS Chung cho các Slide */
+    #slideGenre, #slideArtist{
+        height: 230px;
+        transition: all .2s;
+    }
+    /*  */
+
     /* slideGenre */
     .slideGenre{
-        height: 230px;
+        /* height: 230px; */
         margin-top: 30px;
     }
     .titleGenre{
@@ -364,7 +392,7 @@ body{
 
     /* slideArtist */
     .slideArtist{
-        height: 230px;
+        /* height: 230px; */
         margin-top: 50px;
     }
     .titleArtist{
@@ -441,22 +469,126 @@ body{
 
 
 /* CSS rightContainer */
-.rightContainer{
-    height: 100%;
-    /* background-color: whitesmoke; */
-    background: linear-gradient(136deg, rgba(237, 237, 237, 0.895) 0%,  rgba(255, 255, 255, 0.889) 100%);
-    border-radius: 0px 10px 10px 0px;
-    border: .5px solid black;
+
+/* khai báo hình bài hát */
+:root{
+    --pseudo-background: url();
 }
+
+#rightContainer{
+    height: 100%;
+    position: relative;
+    border-radius: 0px 10px 10px 0px;
+    overflow: hidden;
+    /* transition: all .3s; */
+}
+#rightContainer::before{
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    border-radius: 50%;
+    background: var(--pseudo-background) 0 0 repeat;
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: center;
+    transform: rotate(360deg);
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+    animation-name: spinningBackground;
+    animation-duration: 15s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes spinningBackground {
+    from {
+      transform: rotate(0deg);
+    }
+    
+    to {
+      transform:rotate(360deg);
+    }
+  }
     /* songPlayedContainer */
     .songPlayedContainer{
         height: 100%;
+        background: rgb(55,45,50);
+        background: radial-gradient(circle, rgba(46, 45, 46, 0.447) 0%, rgba(0, 0, 0, 0.896) 100%);
+        backdrop-filter: blur(30px);
     }
-    /* songPlayedImg */
+    /* Phân chiều cao cho các thành phần */
+    .buttonHideSongPlayerContainer{
+        height: 5%;
+        padding: 9px;
+        padding-bottom: 0px;
+        color: whitesmoke;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+    }
     .songPlayedImg{
         height: 45%;
-        /* padding: 15px; */
-        padding: 9px;
+    }
+    .songPlayedLyrics{
+        height: 42%;
+    }
+    .songPlayedControl{
+        height: 8%;
+    }
+    /*  */
+
+    /* songPlayerTittle */
+    .buttonHideSongPlayer{
+        height: 100%;
+        width: 10%;
+        float: right;
+        border: none;
+        background: linear-gradient(270deg, rgba(0, 0, 0, 0.411) 0%, rgba(85, 85, 85, 0.51) 100%);
+        backdrop-filter: blur(10px);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 1s;
+    }
+    .buttonShowSongPlayerContainer{
+        padding-top: 10px;
+        position: absolute;
+        z-index: 1;
+        display: none;
+        float: right;
+        left: 95%;
+    }
+    .buttonShowSongPlayerContainer button{
+        background: linear-gradient(270deg, rgba(0, 0, 0, 0.411) 0%, rgba(85, 85, 85, 0.51) 100%);
+        backdrop-filter: blur(10px);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 1s;
+    }
+    .buttonShowSongPlayerContainer span{
+        color: whitesmoke;
+    }
+    .buttonShowSongPlayer{
+
+    }
+    .buttonHideSongPlayer span{
+        color: whitesmoke;
+    }
+    .buttonHideSongPlayer:hover{
+        background-color: rgb(117, 117, 117);
+        transition: all 1s;
+    }
+    .buttonShowSongPlayer:hover{
+        background: rgb(117, 117, 117);
+        transition: all 1s;
+    }
+
+    /* songPlayedImg */
+    .songPlayedImg{
+        padding: 18px;
     }
     .songPlayedImg img{
         width: 100%;
@@ -465,24 +597,28 @@ body{
         box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
         /* border: .5px solid black; */
     }
+    /*  */
+
     /* songPlayedLyrics */
-    .songPlayedLyrics{
-        height: 45%;
-    }
+
+    /*  */
     
     /* songPlayedControl */
     .songPlayedControl{
-        height: 10%;
         /* padding: 0px 15px 0px 15px; */
         padding: 9px;
+        background-color: whitesmoke;
     }
     .songPlayedControl audio{
         width: 100%;
-        background: #f1f3f4;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-        border-radius: 10px;
-        border: 0.5px solid black;
+        height: 100%;
+        border-radius: 28px;
+        /* box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em; */
     }
+    .songPlayedControl audio::-webkit-media-controls-panel {
+        background-color: whitesmoke;
+      }
+    /*  */
 
 
 
@@ -497,12 +633,14 @@ body{
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    /* background: #f1f1f1; */
+    background: transparent;
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #8888886d;
+    background: rgba(64, 64, 64, 0.427);
+    border-radius: 2px;
   }
   
   /* Handle on hover */
