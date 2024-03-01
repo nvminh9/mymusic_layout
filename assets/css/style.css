@@ -525,7 +525,8 @@ body{
         height: 100%;
         background: rgb(55,45,50);
         background: radial-gradient(circle, rgba(46, 45, 46, 0.447) 0%, rgba(0, 0, 0, 0.896) 100%);
-        backdrop-filter: blur(30px);
+        /* backdrop-filter: blur(30px); */
+        backdrop-filter: blur(80px);
     }
     /* Phân chiều cao cho các thành phần */
     .buttonHideSongPlayerContainer{

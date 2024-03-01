@@ -1,3 +1,4 @@
+// Hàm ẩn Song Player
 function HideSongPlayer(){
     const middleContainer = document.querySelector('#middleContainer');
     const rightContainer = document.querySelector('#rightContainer');
@@ -19,6 +20,7 @@ function HideSongPlayer(){
     slideShow.style.height = '350px';
 }
 
+// Hàm hiện Song Player
 function ShowSongPlayer(){
     const middleContainer = document.querySelector('#middleContainer');
     const rightContainer = document.querySelector('#rightContainer');
@@ -39,6 +41,7 @@ function ShowSongPlayer(){
     slideShow.style.height = '300px';
 }
 
+// Hàm phóng to Song Player
 function buttonZoomSongPlayer(){
     const middleContainer = document.querySelector('#middleContainer');
     const rightContainer = document.querySelector('#rightContainer');
@@ -71,6 +74,7 @@ function buttonZoomSongPlayer(){
     // buttonHideSongPlayer.style.display = 'none';
 }
 
+// Hàm thu nhỏ Song Player
 function buttonZoomOutSongPlayer(){
     const middleContainer = document.querySelector('#middleContainer');
     const rightContainer = document.querySelector('#rightContainer');
@@ -104,4 +108,8 @@ function buttonZoomOutSongPlayer(){
     rightContainer.style.borderRadius = "0px 10px 10px 0px"
     body.style.padding = "8px"
     // buttonHideSongPlayer.style.display = 'block';
+}
+
+function toProfile(){
+    
 }
