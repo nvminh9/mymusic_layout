@@ -396,14 +396,17 @@
             <!-- Phần Container bên phải (chứa miêu tả nhạc) -->
             <div id="rightContainer" class="col l-3 m-0 c-0 rightContainer">
                 <div class="row songPlayedContainer">
-                    <div class="col l-12 m-12 c-12 buttonHideSongPlayerContainer">
+                    <div id="buttonHideSongPlayerContainer" class="col l-12 m-12 c-12 buttonHideSongPlayerContainer">
                         Song Player
-                        <button class="buttonHideSongPlayer" onclick="HideSongPlayer()"><span class="material-symbols-outlined">
+                        <button id="buttonHideSongPlayer" class="buttonHideSongPlayer" onclick="HideSongPlayer()"><span class="material-symbols-outlined">
                             arrow_right
+                        </span></button>
+                        <button id="buttonZoomSongPlayer" class="buttonZoomSongPlayer" onclick="buttonZoomSongPlayer()"><span class="material-symbols-outlined">
+                            zoom_out_map
                         </span></button>
                     </div>
                     <div id="songPlayedImg" class="col l-12 m-12 c-12 songPlayedImg">
-                        <img src="" alt="Ảnh Nhạc Trap Căng Nhất 2023">
+                        <img id="songImg" src="" alt="Ảnh Nhạc Trap Căng Nhất 2023">
                     </div>
 
                     <div class="col l-12 m-12 c-12 songPlayedLyrics">
