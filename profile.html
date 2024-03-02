@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link CSS thư viện Grid System -->
+    <link rel="stylesheet" href="assets/css/library_grid_system.css">
+    <!-- Link CSS style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Link Google Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Favicon -->
+    <link type="image/png" sizes="32x32" rel="icon" href="assets/img/logo/FaviconBlack.png">
+    <!-- Link Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>mymusic | Express yourself through your music taste</title>
+</head>
+<body>
+    <div class="grid wide wrapper">
+        <div class="row container">
+
+            <!-- Phần Container bên trái (chứa logo, ds phát,...) -->
+            <div id="leftContainer" class="col l-3 m-12 c-0 leftContainer">
+                <div class="row logoZone">
+                    <div class="col l-12 m-12 c-12 logoContainer">
+                        <a href="index.html">
+                            <img class="logo" src="assets/img/logo/logoWhiteTransparent.png" alt="">
+                        </a>
+                        <button class="searchButton">
+                            <span class="material-symbols-outlined">
+                                search
+                            </span>
+                        </button>
+                    </div>
+                    <div class="col l-12 m-12 c-12 profileContainer">
+                        <div class="row profile">
+                            <div class="col l-4 m-12 c-12 avatarProfile">
+                                <button onclick="toProfile()" id="avatarProfile">
+                                    <img src="https://ew.com/thmb/pKJRS5tQCFTptZBFXTac64EeE7E=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Playboi-Carti-021423-db8c81a42c88419b8cd58e2c8ead244d.jpg" style="background-color: grey;">
+                                </button>
+                            </div>
+                            <div class="col l-8 m-12 c-12 nameProfile">
+                                <a href="#" class="name">Minh Ngô</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row dspZone">
+                    <!-- Header Danh sách phát -->
+                    <div class="col l-12 m-12 c-12 dspHeader">
+                        <div class="row">
+                            <div class="col l-6 m-6 c-6">
+                                <span>Danh sách phát</span>
+                            </div>
+                            <div class="col l-6 m-6 c-6">
+                                <button class="addDsp">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-12 m-12 c-12 dspContainer">
+                        <!-- Bắt đầu danh sách phát -->
+                        <div class="col l-12 m-12 c-12 dsp">
+                            <div class="row dspInfo">
+                                <div class="col l-6 m-6 c-6 dspImg"> 
+                                    <img src="https://bizweb.dktcdn.net/100/411/628/products/booklet-2-1-1-86f8961a-2c66-4dbe-b979-f0466a7c3083.jpg?v=1677758994023" alt="Danh sách phát cover">
+                                </div>
+                                <div class="col l-6 m-6 c-6 dspName">
+                                    <span>99%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-12 m-12 c-12 dsp">
+                            <div class="row dspInfo">
+                                <div class="col l-6 m-6 c-6 dspImg"> 
+                                    <img src="https://bizweb.dktcdn.net/100/411/628/products/harpers-bazaar-wren-evans-ra-mat-album-loi-choi-03-1024x1024.jpg?v=1702651230007" alt="Danh sách phát cover">
+                                </div>
+                                <div class="col l-6 m-6 c-6 dspName">
+                                    <span>Loi Choi</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-12 m-12 c-12 dsp">
+                            <div class="row dspInfo">
+                                <div class="col l-6 m-6 c-6 dspImg"> 
+                                    <img src="https://upload.wikimedia.org/wikipedia/en/0/03/Yeezus_album_cover.png" alt="Danh sách phát cover">
+                                </div>
+                                <div class="col l-6 m-6 c-6 dspName">
+                                    <span>Yeezus</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-12 m-12 c-12 dsp">
+                            <div class="row dspInfo">
+                                <div class="col l-6 m-6 c-6 dspImg"> 
+                                    <img src="https://photo-resize-zmp3.zmdcdn.me/w600_r1x1_jpeg/cover/7/6/9/b/769b97d91b5f2ec104d6ba7c9bd7a2d3.jpg" alt="Danh sách phát cover">
+                                </div>
+                                <div class="col l-6 m-6 c-6 dspName">
+                                    <span>420ent</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Kết thúc danh sách phát -->
+                        
+                    </div>
+
+                                        
+
+                    
+
+                </div>
+            </div>
+
+            <!-- Phần Container ở giữa (chứa các nội dung show ra) -->
+            <div id="middleContainer" class="col l-6 m-0 c-0 middleContainer">
+                <!-- Button Show Song Player -->
+                <div id="buttonShowSongPlayerContainer" class="col l-12 m-12 c-12 buttonShowSongPlayerContainer" >
+                    <button class="buttonShowSongPlayer" onclick="ShowSongPlayer()"><span class="material-symbols-outlined">
+                        arrow_left
+                    </span></button>
+                </div>
+                
+            </div>
+
+            <!-- Phần Container bên phải (chứa miêu tả nhạc) -->
+            <div id="rightContainer" class="col l-3 m-0 c-12 rightContainer">
+                <div class="row songPlayedContainer">
+                    <div id="buttonHideSongPlayerContainer" class="col l-12 m-12 c-12 buttonHideSongPlayerContainer">
+                        Song Player
+                        <button id="buttonHideSongPlayer" class="buttonHideSongPlayer" onclick="HideSongPlayer()"><span class="material-symbols-outlined">
+                            arrow_right
+                        </span></button>
+                        <button id="buttonZoomSongPlayer" class="buttonZoomSongPlayer" onclick="buttonZoomSongPlayer()"><span class="material-symbols-outlined">
+                            zoom_out_map
+                        </span></button>
+                    </div>
+                    <div id="songPlayedImg" class="col l-12 m-12 c-12 songPlayedImg">
+                        <img id="songImg" src="" alt="Ảnh Nhạc Trap Căng Nhất 2023">
+                    </div>
+
+                    <div class="col l-12 m-12 c-12 songPlayedLyrics">
+                        <div id="lyrics-content">
+
+                        </div>
+                    </div>
+                    <div id="audioSong" class="col l-12 m-12 c-12 songPlayedControl">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/home.js"></script>
+    <script src="assets/js/slideShow.js"></script>
+    <script src="assets/js/songPlayer.js"></script>
+</body>
+</html>
