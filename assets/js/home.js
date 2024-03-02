@@ -145,7 +145,7 @@ function toProfile(){
         <div id="profileAvatar" class="col l-12 m-12 c-12 profileAvatar">
             <div class="row">
                 <div class="col l-3 m-12 c-12 avatar">
-                    <img src="https://www.drivetest.de/wp-content/uploads/2019/08/drivetest-avatar-m.png" alt="">
+                    <img src="https://ew.com/thmb/pKJRS5tQCFTptZBFXTac64EeE7E=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Playboi-Carti-021423-db8c81a42c88419b8cd58e2c8ead244d.jpg" alt="">
                 </div>
                 <div class="col l-9 m-12 c-12 name">
                     <h5>Minh Ngô</h5>
