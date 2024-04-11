@@ -1,7 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+
+<!-- saved from url=(0050)https://mymusicaf-df990a939865.herokuapp.com/home/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link CSS thư viện Grid System -->
     <link rel="stylesheet" href="assets/css/library_grid_system.css">
@@ -17,33 +17,56 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
     <title>mymusic | Express yourself through your music taste</title>
+    <script type="text/javascript">
+        var user = 'minhngo'
+
+        function getCookie(name) {
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                const cookies = document.cookie.split(';');
+                for (let i = 0;i < cookies.length; i++) {
+                    const cookie = cookies[i].trim();
+                    // Does this cookie string begin with the name we want?
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+        const csrftoken = getCookie('csrftoken');
+
+    </script>
 </head>
 <body>
     <div class="grid wide wrapper">
         <div class="row container">
 
             <!-- Phần Container bên trái (chứa logo, ds phát,...) -->
-            <div id="leftContainer" class="col l-3 m-12 c-0 leftContainer">
+            <div id="leftContainer" class="col l-3 m-0 c-0 leftContainer">
                 <div class="row logoZone">
                     <div class="col l-12 m-12 c-12 logoContainer">
-                        <a href="index.html">
+                        <a href="">
                             <img class="logo" src="assets/img/logo/logoWhiteTransparent.png" alt="">
                         </a>
-                        <button class="searchButton">
+                        <a href="#" class="searchButton">
                             <span class="material-symbols-outlined">
                                 search
                             </span>
-                        </button>
+                        </a>
                     </div>
                     <div class="col l-12 m-12 c-12 profileContainer">
                         <div class="row profile">
                             <div class="col l-4 m-12 c-12 avatarProfile">
-                                <button onclick="toProfile()" id="avatarProfile">
-                                    <img src="./assets/img/profileAvatar.png" style="background-color: grey;">
-                                </button>
+                                <a href="#" id="avatarProfile">
+                                    <img src="assets/img/profileAvatar.png" style="background-color: grey;">
+                                </a>
                             </div>
                             <div class="col l-8 m-12 c-12 nameProfile">
-                                <button onclick="toProfile()" class="name">Minh Ngô</button>
+                                <a href="#" class="name">
+                                    minhngo
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -61,369 +84,319 @@
                         </div>
                     </div>
                     <div class="col l-12 m-12 c-12 dspContainer">
-                        <div class="col l-12 m-12 c-12 dsp">
-                            <div class="row dspInfo">
-                                <div class="col l-6 m-6 c-6 dspImg"> 
-                                    <img src="https://bizweb.dktcdn.net/100/411/628/products/booklet-2-1-1-86f8961a-2c66-4dbe-b979-f0466a7c3083.jpg?v=1677758994023" alt="Danh sách phát cover">
-                                </div>
-                                <div class="col l-6 m-6 c-6 dspName">
-                                    <span>99%</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col l-12 m-12 c-12 dsp">
-                            <div class="row dspInfo">
-                                <div class="col l-6 m-6 c-6 dspImg"> 
-                                    <img src="https://bizweb.dktcdn.net/100/411/628/products/harpers-bazaar-wren-evans-ra-mat-album-loi-choi-03-1024x1024.jpg?v=1702651230007" alt="Danh sách phát cover">
-                                </div>
-                                <div class="col l-6 m-6 c-6 dspName">
-                                    <span>Loi Choi</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col l-12 m-12 c-12 dsp">
-                            <div class="row dspInfo">
-                                <div class="col l-6 m-6 c-6 dspImg"> 
-                                    <img src="https://upload.wikimedia.org/wikipedia/en/0/03/Yeezus_album_cover.png" alt="Danh sách phát cover">
-                                </div>
-                                <div class="col l-6 m-6 c-6 dspName">
-                                    <span>Yeezus</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col l-12 m-12 c-12 dsp">
-                            <div class="row dspInfo">
-                                <div class="col l-6 m-6 c-6 dspImg"> 
-                                    <img src="https://bizweb.dktcdn.net/100/411/628/products/harpers-bazaar-wren-evans-ra-mat-album-loi-choi-03-1024x1024.jpg?v=1702651230007" alt="Danh sách phát cover">
-                                </div>
-                                <div class="col l-6 m-6 c-6 dspName">
-                                    <span>Loi Choi</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col l-12 m-12 c-12 dsp">
-                            <div class="row dspInfo">
-                                <div class="col l-6 m-6 c-6 dspImg"> 
-                                    <img src="https://upload.wikimedia.org/wikipedia/en/0/03/Yeezus_album_cover.png" alt="Danh sách phát cover">
-                                </div>
-                                <div class="col l-6 m-6 c-6 dspName">
-                                    <span>Yeezus</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col l-12 m-12 c-12 dsp">
-                            <div class="row dspInfo">
-                                <div class="col l-6 m-6 c-6 dspImg"> 
-                                    <img src="https://bizweb.dktcdn.net/100/411/628/products/harpers-bazaar-wren-evans-ra-mat-album-loi-choi-03-1024x1024.jpg?v=1702651230007" alt="Danh sách phát cover">
-                                </div>
-                                <div class="col l-6 m-6 c-6 dspName">
-                                    <span>Loi Choi</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col l-12 m-12 c-12 dsp">
-                            <div class="row dspInfo">
-                                <div class="col l-6 m-6 c-6 dspImg"> 
-                                    <img src="https://upload.wikimedia.org/wikipedia/en/0/03/Yeezus_album_cover.png" alt="Danh sách phát cover">
-                                </div>
-                                <div class="col l-6 m-6 c-6 dspName">
-                                    <span>Yeezus</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col l-12 m-12 c-12 dsp">
-                            <div class="row dspInfo">
-                                <div class="col l-6 m-6 c-6 dspImg"> 
-                                    <img src="https://bizweb.dktcdn.net/100/411/628/products/harpers-bazaar-wren-evans-ra-mat-album-loi-choi-03-1024x1024.jpg?v=1702651230007" alt="Danh sách phát cover">
-                                </div>
-                                <div class="col l-6 m-6 c-6 dspName">
-                                    <span>Loi Choi</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col l-12 m-12 c-12 dsp">
-                            <div class="row dspInfo">
-                                <div class="col l-6 m-6 c-6 dspImg"> 
-                                    <img src="https://upload.wikimedia.org/wikipedia/en/0/03/Yeezus_album_cover.png" alt="Danh sách phát cover">
-                                </div>
-                                <div class="col l-6 m-6 c-6 dspName">
-                                    <span>Yeezus</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col l-12 m-12 c-12 dsp">
-                            <div class="row dspInfo">
-                                <div class="col l-6 m-6 c-6 dspImg"> 
-                                    <img src="https://bizweb.dktcdn.net/100/411/628/products/harpers-bazaar-wren-evans-ra-mat-album-loi-choi-03-1024x1024.jpg?v=1702651230007" alt="Danh sách phát cover">
-                                </div>
-                                <div class="col l-6 m-6 c-6 dspName">
-                                    <span>Loi Choi</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col l-12 m-12 c-12 dsp">
-                            <div class="row dspInfo">
-                                <div class="col l-6 m-6 c-6 dspImg"> 
-                                    <img src="https://upload.wikimedia.org/wikipedia/en/0/03/Yeezus_album_cover.png" alt="Danh sách phát cover">
-                                </div>
-                                <div class="col l-6 m-6 c-6 dspName">
-                                    <span>Yeezus</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col l-12 m-12 c-12 dsp">
-                            <div class="row dspInfo">
-                                <div class="col l-6 m-6 c-6 dspImg"> 
-                                    <img src="https://bizweb.dktcdn.net/100/411/628/products/harpers-bazaar-wren-evans-ra-mat-album-loi-choi-03-1024x1024.jpg?v=1702651230007" alt="Danh sách phát cover">
-                                </div>
-                                <div class="col l-6 m-6 c-6 dspName">
-                                    <span>Loi Choi</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col l-12 m-12 c-12 dsp">
-                            <div class="row dspInfo">
-                                <div class="col l-6 m-6 c-6 dspImg"> 
-                                    <img src="https://upload.wikimedia.org/wikipedia/en/0/03/Yeezus_album_cover.png" alt="Danh sách phát cover">
-                                </div>
-                                <div class="col l-6 m-6 c-6 dspName">
-                                    <span>Yeezus</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col l-12 m-12 c-12 dsp">
-                            <div class="row dspInfo">
-                                <div class="col l-6 m-6 c-6 dspImg"> 
-                                    <img src="https://bizweb.dktcdn.net/100/411/628/products/harpers-bazaar-wren-evans-ra-mat-album-loi-choi-03-1024x1024.jpg?v=1702651230007" alt="Danh sách phát cover">
-                                </div>
-                                <div class="col l-6 m-6 c-6 dspName">
-                                    <span>Loi Choi</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col l-12 m-12 c-12 dsp">
-                            <div class="row dspInfo">
-                                <div class="col l-6 m-6 c-6 dspImg"> 
-                                    <img src="https://upload.wikimedia.org/wikipedia/en/0/03/Yeezus_album_cover.png" alt="Danh sách phát cover">
-                                </div>
-                                <div class="col l-6 m-6 c-6 dspName">
-                                    <span>Yeezus</span>
-                                </div>
-                            </div>
-                        </div>
-
                         
-                    </div>
-
+                            
+                            <div class="col l-12 m-12 c-12 dsp">
+                                <div class="row dspInfo">
+                                    <div class="col l-6 m-6 c-6 dspImg"> 
                                         
-
-                    
-
-                </div>
-            </div>
-
-            <!-- Phần Container ở giữa (chứa các nội dung show ra) -->
-            <div id="middleContainer" class="col l-6 m-0 c-0 middleContainer">
-                <!-- Button Show Song Player -->
-                <div id="buttonShowSongPlayerContainer" class="col l-12 m-12 c-12 buttonShowSongPlayerContainer">
-                    <button class="buttonShowSongPlayer" onclick="ShowSongPlayer()"><span class="material-symbols-outlined">
-                        arrow_left
-                    </span></button>
-                </div>
-                <!-- slide images -->
-                <div id="slideShow" class="row slideShow">
-                    <div class="col l-12 m-12 c-12 listImages">
-                        <img class="imgInSlide" src="https://i.ytimg.com/vi/5WkwBKu1le0/maxresdefault.jpg" alt="99% Album Cover">
-                        <img class="imgInSlide" src="https://i.ytimg.com/vi/82ZTNQNEQgE/maxresdefault.jpg" alt="Ái Album Cover">
-                        <img class="imgInSlide" src="https://i.ytimg.com/vi/owuEMIKthbk/maxresdefault.jpg" alt="420ent Album Cover">
-                        <img class="imgInSlide" src="https://thantuong.tv/custom/domain_1/2023/12/14/image-133-1702539123.jpg" alt="Loi Choi Album Cover">
-                        <img class="imgInSlide" src="https://i.redd.it/8kdidpdcobl71.jpg" alt="Playboi Carti Cover">
-                    </div>
-                    <div class="col l-12 m-12 c-12 btns">
-                        <div id="btnLeftSlideShow" class="btnLeft btn"><span class="material-symbols-outlined">arrow_left</span></div>
-                        <div id="btnRightSlideShow" class="btnRight btn"><span class="material-symbols-outlined">arrow_right</span></div>
-                    </div>
-                </div>
-
-                <!-- Phần danh sách thể loại -->
-                <div id="slideGenre" class="row slide slideGenre">
-                    <div class="col l-12 m-12 c-12 titleGenre">
-                        <span class="title">Thể Loại</span>
-                    </div>
-                    <div class="col l-12 m-12 c-12 listGenre">
-                        <div class="col l-3 m-3 c-3 genre">
-                            <div class="genreContainer">
-                                <img src="https://i.pinimg.com/736x/a1/e2/db/a1e2db058dafb9a1a36d3b18965a01d7.jpg" alt="">
-                                <span class="genreName">Pop</span>
+                                        <img src="assets/images/hinhDsp1.jpg" alt="Danh sách phát cover">
+                                    </div>
+                                    <div class="col l-6 m-6 c-6 dspName">
+                                        <a href="#">relax music</a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col l-3 m-3 c-3 genre">
-                            <div class="genreContainer">
-                                <img src="https://seami.vn/wp-content/uploads/2017/10/the-loai-nhac-rock.jpg" alt="">
-                                <span class="genreName">Rock</span>
+                            
+                            <div class="col l-12 m-12 c-12 dsp">
+                                <div class="row dspInfo">
+                                    <div class="col l-6 m-6 c-6 dspImg"> 
+                                        
+                                        <img src="assets/images/outwest.jfif" alt="Danh sách phát cover">
+                                    </div>
+                                    <div class="col l-6 m-6 c-6 dspName">
+                                        <a href="#">workout music</a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col l-3 m-3 c-3 genre">
-                            <div class="genreContainer">
-                                <img src="https://seami.vn/wp-content/uploads/2017/10/the-loai-nhac-jazz.jpg" alt="">
-                                <span class="genreName">Jazz</span>
-                            </div>
-                        </div>
-                        <div class="col l-3 m-3 c-3 genre">
-                            <div class="genreContainer">
-                                <img src="https://i.pinimg.com/736x/3a/75/ff/3a75ff3669554a502f545cae6b7e009e.jpg" alt="">
-                                <span class="genreName">Rap/Hip Hop</span>
-                            </div>
-                        </div>
-                        <div class="col l-3 m-3 c-3 genre">
-                            <div class="genreContainer">
-                                <img src="https://seami.vn/wp-content/uploads/2017/10/the-loai-nhac-rb.jpg" alt="">
-                                <span class="genreName">R&B</span>
-                            </div>
-                        </div>
-                        <div class="col l-3 m-3 c-3 genre">
-                            <div class="genreContainer">
-                                <img src="https://seami.vn/wp-content/uploads/2017/10/the-loai-nhac-dance.jpg" alt="">
-                                <span class="genreName">Dance</span>
-                            </div>
-                        </div>
-                        <div class="col l-3 m-3 c-3 genre">
-                            <div class="genreContainer">
-                                <img src="https://seami.vn/wp-content/uploads/2017/10/the-loai-nhac-dong-que.jpg" alt="">
-                                <span class="genreName">Country</span>
-                            </div>
-                        </div>
-                        <div class="col l-3 m-3 c-3 genre">
-                            <div class="genreContainer">
-                                <img src="https://i.pinimg.com/originals/14/51/84/145184956ea1219062cfa3e0d0146b50.jpg" alt="">
-                                <span class="genreName">EDM</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Phần danh sách nghệ sĩ -->
-                <div id="slideArtist" class="row slide slideArtist">
-                    <div class="col l-12 m-12 c-12 titleArtist">
-                        <span class="title">Nghệ sĩ</span>
-                    </div>
-                    <div class="col l-12 m-12 c-12 listArtist">
-                        <div class="col l-3 m-3 c-3 artist">
-                            <div class="artistContainer">
-                                <img src="https://kenh14cdn.com/203336854389633024/2022/2/20/photo-1-1645350058267149016134.jpg" alt="Ảnh The Weeknd">
-                                <span class="artistName">The Weeknd</span>
-                            </div>
-                        </div>
-                        <div class="col l-3 m-3 c-3 artist">
-                            <div class="artistContainer">
-                                <img src="https://hips.hearstapps.com/hmg-prod/images/ariana_grande_photo_jon_kopaloff_getty_images_465687098.jpg" alt="Ảnh Ariana Grande">
-                                <span class="artistName">Ariana Grande</span>
-                            </div>
-                        </div>
-                        <div class="col l-3 m-3 c-3 artist">
-                            <div class="artistContainer">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Justin_Bieber_in_2015.jpg/800px-Justin_Bieber_in_2015.jpg" alt="Ảnh Justin Bieber">
-                                <span class="artistName">Justin Bieber</span>
-                            </div>
-                        </div>
-                        <div class="col l-3 m-3 c-3 artist">
-                            <div class="artistContainer">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Zayn_Wiki_%28cropped%29.jpg/800px-Zayn_Wiki_%28cropped%29.jpg" alt="Ảnh Zayn">
-                                <span class="artistName">Zayn</span>
-                            </div>
-                        </div>
+                            
                         
-                        <div class="col l-3 m-3 c-3 artist">
-                            <div class="artistContainer">
-                                <img src="https://cdn.tuoitre.vn/471584752817336320/2023/2/14/kanyewest-1676349082565913948458.jpg" alt="Ảnh Kayne West">
-                                <span class="artistName">Kayne West</span>
-                            </div>
-                        </div>
-                        <div class="col l-3 m-3 c-3 artist">
-                            <div class="artistContainer">
-                                <img src="https://i.guim.co.uk/img/media/2965737a8d6966d949a9c7bfc255af426b5a79ac/443_69_2406_1444/master/2406.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=e8224f4f999aad1326f43373a2a7d781" alt="Ảnh Travis Scott">
-                                <span class="artistName">Travis Scott</span>
-                            </div>
-                        </div>
-                        <div class="col l-3 m-3 c-3 artist">
-                            <div class="artistContainer">
-                                <img src="https://yt3.googleusercontent.com/oKexgOgva1BtrN_zO5WMNEX4V81_VClcHyBkAdsQC1KjLWYIfVGDYxUbiRKVbYF7mcXrv9Xoig=s900-c-k-c0x00ffffff-no-rj" alt="Ảnh Playboi Carti">
-                                <span class="artistName">Playboi Carti</span>
-                            </div>
-                        </div>
-                        <div class="col l-3 m-3 c-3 artist">
-                            <div class="artistContainer">
-                                <img src="https://yt3.googleusercontent.com/V4FqOieQ9y9dnErXPUZNWl1hyLafxIK7F55n5M8LVhPBmEou8kAbNuMlUZx23DoJHvH1sWG56No=s900-c-k-c0x00ffffff-no-rj" alt="Ảnh Kendrick Lamar">
-                                <span class="artistName">Kendrick Lamar</span>
-                            </div>
-                        </div>
-                        <div class="col l-3 m-3 c-3 artist">
-                            <div class="artistContainer">
-                                <img src="https://yt3.googleusercontent.com/BFZVpnsYdUinXATWqFv_TehfKUw_uVila1n_bLh02PJnmvf0lNiCAldtoeqvD2uiFx6hUWof=s900-c-k-c0x00ffffff-no-rj" alt="Ảnh MCK">
-                                <span class="artistName">MCK</span>
-                            </div>
-                        </div>
-                        <div class="col l-3 m-3 c-3 artist">
-                            <div class="artistContainer">
-                                <img src="https://5sfashion.vn/storage/upload/images/ckeditor/qd0MYUHTHW62dst9VGCkdgYKJ9nfBXapdpoEO4RS.png" alt="Ảnh Wxride">
-                                <span class="artistName">Wxrdie</span>
-                            </div>
-                        </div>
-                        <div class="col l-3 m-3 c-3 artist">
-                            <div class="artistContainer">
-                                <img src="https://avatar-ex-swe.nixcdn.com/singer/avatar/2022/06/30/d/e/1/7/1656582658102_300.jpg" alt="Ảnh Wren Evans">
-                                <span class="artistName">Wren Evans</span>
-                            </div>
-                        </div>
-                        <div class="col l-3 m-3 c-3 artist">
-                            <div class="artistContainer">
-                                <img src="https://vcdn1-giaitri.vnecdn.net/2022/02/08/thao-linh-jpeg-1644313181-2294-1644314017.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=zUwYLKE1lqSsl-q5y7qskw" alt="Ảnh Tlinh">
-                                <span class="artistName">Tlinh</span>
-                            </div>
-                        </div>
-                        <div class="col l-3 m-3 c-3 artist">
-                            <div class="artistContainer">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Drake_July_2016.jpg/640px-Drake_July_2016.jpg" alt="Ảnh Drake">
-                                <span class="artistName">Drake</span>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
+
+                
+<!-- Phần Container ở giữa (chứa các nội dung show ra) -->
+<div id="middleContainer" class="col l-6 m-12 c-12 middleContainer">
+    <!-- Button Show Song Player -->
+    <div id="buttonShowSongPlayerContainer" class="col l-12 m-12 c-12 buttonShowSongPlayerContainer">
+        <button class="buttonShowSongPlayer" onclick="ShowSongPlayer()"><span class="material-symbols-outlined">
+            arrow_left
+        </span></button>
+    </div>
+    <!-- slide images -->
+    <div id="slideShow" class="row slideShow">
+        <div class="col l-12 m-12 c-12 listImages" style="transform: translateX(-1516px);">
+            
+                
+                    <img class="imgInSlide" src="assets/images/hinholdbutgold.jpg" alt="Tin tức 1">
+                
+                    <img class="imgInSlide" src="assets/images/hinhDspAsap.jpg" alt="Tin tức 2">
+                
+                    <img class="imgInSlide" src="assets/images/ads3.jpg" alt="Tin tức 3">
+                
+                    <img class="imgInSlide" src="assets/images/ads5.jpg" alt="Tin tức 4">
+                
+                    <img class="imgInSlide" src="assets/images/ads1.webp" alt="Tin tức 5">
+                
+            
+        </div>
+        <div class="col l-12 m-12 c-12 btns">
+            <div id="btnLeftSlideShow" class="btnLeft btn"><span class="material-symbols-outlined">arrow_left</span></div>
+            <div id="btnRightSlideShow" class="btnRight btn"><span class="material-symbols-outlined">arrow_right</span></div>
+        </div>
+    </div>
+
+    <!-- Phần danh sách thể loại -->
+    <div id="slideGenre" class="row slide slideGenre">
+        <div class="col l-12 m-12 c-12 titleGenre">
+            <span class="title">Thể Loại</span>
+        </div>
+        <div class="col l-12 m-12 c-12 listGenre">
+            
+                
+                <div class="col l-3 m-3 c-4 genre">
+                    <div class="genreContainer">
+                        <a href="#"><img src="./mymusic _ Express yourself through your music taste_files/logoPop_VurYA9H.jpg" alt=""></a>
+                        <a class="aGenre" href="#" style="background: #3b3b3c; border: none; color: whitesmoke; padding: 5px; border-radius: 8px; cursor: pointer;  text-decoration: none;">Pop</a>
+                    </div>
+                </div>
+                
+                <div class="col l-3 m-3 c-4 genre">
+                    <div class="genreContainer">
+                        <a href="#"><img src="assets/images/logoRap.jpg" alt=""></a>
+                        <a class="aGenre" href="#" style="background: #3b3b3c; border: none; color: whitesmoke; padding: 5px; border-radius: 8px; cursor: pointer;  text-decoration: none;">Rap</a>
+                    </div>
+                </div>
+                
+                <div class="col l-3 m-3 c-4 genre">
+                    <div class="genreContainer">
+                        <a href="#"><img src="assets/images/login_backgr.png" alt=""></a>
+                        <a class="aGenre" href="#" style="background: #3b3b3c; border: none; color: whitesmoke; padding: 5px; border-radius: 8px; cursor: pointer;  text-decoration: none;">Rock</a>
+                    </div>
+                </div>
+                
+                <div class="col l-3 m-3 c-4 genre">
+                    <div class="genreContainer">
+                        <a href="#"><img src="./mymusic _ Express yourself through your music taste_files/logoJazz_AI0CZyM.png" alt=""></a>
+                        <a class="aGenre" href="#" style="background: #3b3b3c; border: none; color: whitesmoke; padding: 5px; border-radius: 8px; cursor: pointer;  text-decoration: none;">Jazz</a>
+                    </div>
+                </div>
+                
+                <div class="col l-3 m-3 c-4 genre">
+                    <div class="genreContainer">
+                        <a href="#"><img src="assets/images/logoEDM.jpg" alt=""></a>
+                        <a class="aGenre" href="#" style="background: #3b3b3c; border: none; color: whitesmoke; padding: 5px; border-radius: 8px; cursor: pointer;  text-decoration: none;">EDM</a>
+                    </div>
+                </div>
+                
+                <div class="col l-3 m-3 c-4 genre">
+                    <div class="genreContainer">
+                        <a href="#"><img src="assets/images/hinhDspAsap.jpg" alt=""></a>
+                        <a class="aGenre" href="#" style="background: #3b3b3c; border: none; color: whitesmoke; padding: 5px; border-radius: 8px; cursor: pointer;  text-decoration: none;">Country</a>
+                    </div>
+                </div>
+                
+            
+        </div>
+    </div>
+
+    <!-- Phần danh sách nghệ sĩ -->
+    <div id="slideArtist" class="row slide slideArtist">
+        <div class="col l-12 m-12 c-12 titleArtist">
+            <span class="title">Nghệ sĩ</span>
+        </div>
+        <div class="col l-12 m-12 c-12 listArtist">
+            
+                
+                <div class="col l-3 m-3 c-4 artist">
+                    <div class="artistContainer">
+                        <a href="#"><img src="assets/images/hinhYe.jpg" alt=""></a>
+                        <a class="aArtist" href="#" style="background: #3b3b3c; border: none; color: whitesmoke; padding: 5px; border-radius: 8px; cursor: pointer; text-decoration: none;">Ye</a>
+                    </div>
+                </div>
+                
+                <div class="col l-3 m-3 c-4 artist">
+                    <div class="artistContainer">
+                        <a href="#"><img src="assets/images/hinhTravis.jpg" alt=""></a>
+                        <a class="aArtist" href="#" style="background: #3b3b3c; border: none; color: whitesmoke; padding: 5px; border-radius: 8px; cursor: pointer; text-decoration: none;">Travis Scott</a>
+                    </div>
+                </div>
+                
+                <div class="col l-3 m-3 c-4 artist">
+                    <div class="artistContainer">
+                        <a href="#"><img src="assets/images/hinhTheWeeknd.jpg" alt=""></a>
+                        <a class="aArtist" href="#" style="background: #3b3b3c; border: none; color: whitesmoke; padding: 5px; border-radius: 8px; cursor: pointer; text-decoration: none;">The Weeknd</a>
+                    </div>
+                </div>
+                
+                <div class="col l-3 m-3 c-4 artist">
+                    <div class="artistContainer">
+                        <a href="#"><img src="assets/images/hinhAriana.jpg" alt=""></a>
+                        <a class="aArtist" href="#" style="background: #3b3b3c; border: none; color: whitesmoke; padding: 5px; border-radius: 8px; cursor: pointer; text-decoration: none;">Ariana Grande</a>
+                    </div>
+                </div>
+                
+                <div class="col l-3 m-3 c-4 artist">
+                    <div class="artistContainer">
+                        <a href="#"><img src="assets/images/hinhSontung.jpg" alt=""></a>
+                        <a class="aArtist" href="#" style="background: #3b3b3c; border: none; color: whitesmoke; padding: 5px; border-radius: 8px; cursor: pointer; text-decoration: none;">Sơn Tùng MTP</a>
+                    </div>
+                </div>
+                
+                <div class="col l-3 m-3 c-4 artist">
+                    <div class="artistContainer">
+                        <a href="#"><img src="assets/images/hinhMck.jpg" alt=""></a>
+                        <a class="aArtist" href="#" style="background: #3b3b3c; border: none; color: whitesmoke; padding: 5px; border-radius: 8px; cursor: pointer; text-decoration: none;">MCK</a>
+                    </div>
+                </div>
+                
+                <div class="col l-3 m-3 c-4 artist">
+                    <div class="artistContainer">
+                        <a href="#"><img src="assets/images/hinhWxrdie.png" alt=""></a>
+                        <a class="aArtist" href="#" style="background: #3b3b3c; border: none; color: whitesmoke; padding: 5px; border-radius: 8px; cursor: pointer; text-decoration: none;">Wxrdie</a>
+                    </div>
+                </div>
+                
+                <div class="col l-3 m-3 c-4 artist">
+                    <div class="artistContainer">
+                        <a href="#"><img src="assets/images/hinhNgot.jfif" alt=""></a>
+                        <a class="aArtist" href="#" style="background: #3b3b3c; border: none; color: whitesmoke; padding: 5px; border-radius: 8px; cursor: pointer; text-decoration: none;">Ngọt</a>
+                    </div>
+                </div>
+                
+            
+        </div>
+    </div>
+
+    <br>
+    <!-- Phần danh sách tất cả nhạc -->
+    <div class="row DspBody">
+        <div class="col l-12 m-12 c-12 titleArtist">
+            <span class="title">Danh Sách Nhạc</span>
+        </div>
+        
+            <button data-song="yeEverybody.mp3" data-songimg="vulture2_MIGbfou.jpg" data-action="play" class="col l-12 m-12 c-12 DspSong btnSong">
+                <div class="row">
+                    <div class="col l-3 m-3 c-3 DspSongImg">
+                        <img src="assets/images/vulture2.jpg" alt="EVERYBODY">
+                    </div>
+                    <div class="col l-9 m-9 c-9 DspSongInfor">
+                        <a href="#">
+                            EVERYBODY
+                        </a>
+                        <h5></h5>
+                        <h6>Người đăng : <span>minhngo</span></h6>
+                        <h6>Ngày đăng : <span>March 20, 2024, 2:11 a.m.</span></h6>
+                        <h6>File : <span>yeEverybody.mp3</span></h6>
+                    </div>
+                </div>
+            </button>
+        
+            <button data-song="outWest.mp3" data-songimg="outwest_HCDby4A.jfif" data-action="play" class="col l-12 m-12 c-12 DspSong btnSong">
+                <div class="row">
+                    <div class="col l-3 m-3 c-3 DspSongImg">
+                        <img src="assets/images/outwest.jfif" alt="OUT WEST">
+                    </div>
+                    <div class="col l-9 m-9 c-9 DspSongInfor">
+                        <a href="#">
+                            OUT WEST
+                        </a>
+                        <h5></h5>
+                        <h6>Người đăng : <span>minhngo</span></h6>
+                        <h6>Ngày đăng : <span>March 20, 2024, 2:11 a.m.</span></h6>
+                        <h6>File : <span>outWest.mp3</span></h6>
+                    </div>
+                </div>
+            </button>
+        
+            <button data-song="chungTaCuaTuongLai_Atir86E.mp3" data-songimg="hinhChungTaCuaTuongLai_s3nFO7D.jpg" data-action="play" class="col l-12 m-12 c-12 DspSong btnSong">
+                <div class="row">
+                    <div class="col l-3 m-3 c-3 DspSongImg">
+                        <img src="assets/images/avatar2.jpg" alt="Chúng ta của tương lai">
+                    </div>
+                    <div class="col l-9 m-9 c-9 DspSongInfor">
+                        <a href="#">
+                            Chúng ta của tương lai
+                        </a>
+                        <h5></h5>
+                        <h6>Người đăng : <span>minhngo</span></h6>
+                        <h6>Ngày đăng : <span>March 20, 2024, 2:11 a.m.</span></h6>
+                        <h6>File : <span>chungTaCuaTuongLai_Atir86E.mp3</span></h6>
+                    </div>
+                </div>
+            </button>
+        
+    </div>
+</div>
+
+<!-- Phần Container bên phải (chứa miêu tả nhạc) -->
+<div id="rightContainer" class="col l-3 m-0 c-0 rightContainer">
+    
+    
+    
+    <div class="row songPlayedContainer">
+        <div id="buttonHideSongPlayerContainer" class="col l-12 m-12 c-12 buttonHideSongPlayerContainer">
+            Song Player
+            <button id="buttonHideSongPlayer" class="buttonHideSongPlayer" onclick="HideSongPlayer()"><span class="material-symbols-outlined">
+                arrow_right
+            </span></button>
+            <button id="buttonZoomSongPlayer" class="buttonZoomSongPlayer" onclick="buttonZoomSongPlayer()"><span class="material-symbols-outlined">
+                zoom_out_map
+            </span></button>
+        </div>
+            
+            <div id="songPlayedImg" class="col l-12 m-12 c-12 songPlayedImg">
+                <img id="songImg" src="assets/images/hinhPlayerMusicDefault.jpg" alt="Hình mặc định khi chưa có nhạc phát ...">
+            </div>
+    
+            <div class="col l-12 m-12 c-12 songPlayedLyrics">
+                <div id="lyrics-content">
+                    <h3 style="text-align:center; ">Chưa có bài nào được phát ...</h3>
+                </div>
+            </div>
+            <div id="audioSong" class="col l-12 m-12 c-12 songPlayedControl">
+                <audio id="sourceSong" autoplay="" controls="" loop="">
+                    
+                </audio>
+            </div>
+            <style>
+                /* khai báo hình bài hát */
+                :root{
+                    --pseudo-background: url(/static/mymusic_home/images/hinhPlayerMusicDefault.jpg);
+                }
+            </style>
+        
+    </div>
+</div>
+
+
+    <style>
+        .aGenre:hover{
+            background: brown;
+        }
+        .aArtist:hover{
+            background: brown;
+        }
+    </style>
+
+                
+                
+                
+                
+                
+                
+                
 
             <!-- Phần Container bên phải (chứa miêu tả nhạc) -->
-            <div id="rightContainer" class="col l-3 m-0 c-12 rightContainer">
-                <div class="row songPlayedContainer">
-                    <div id="buttonHideSongPlayerContainer" class="col l-12 m-12 c-12 buttonHideSongPlayerContainer">
-                        Song Player
-                        <button id="buttonHideSongPlayer" class="buttonHideSongPlayer" onclick="HideSongPlayer()"><span class="material-symbols-outlined">
-                            arrow_right
-                        </span></button>
-                        <button id="buttonZoomSongPlayer" class="buttonZoomSongPlayer" onclick="buttonZoomSongPlayer()"><span class="material-symbols-outlined">
-                            zoom_out_map
-                        </span></button>
-                    </div>
-                    <div id="songPlayedImg" class="col l-12 m-12 c-12 songPlayedImg">
-                        <img id="songImg" src="" alt="Ảnh Nhạc Trap Căng Nhất 2023">
-                    </div>
-
-                    <div class="col l-12 m-12 c-12 songPlayedLyrics">
-                        <div id="lyrics-content">
-
-                        </div>
-                    </div>
-                    <div id="audioSong" class="col l-12 m-12 c-12 songPlayedControl">
-                        
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
 
     <script src="assets/js/home.js"></script>
     <script src="assets/js/slideShow.js"></script>
-    <script src="assets/js/songPlayer.js"></script>
-</body>
-</html>
+    <script src="assets/js/handle.js"></script>
+    
+
+
+</body></html>
